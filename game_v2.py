@@ -26,7 +26,7 @@ def random_predict(number: int = 1) -> int:
         elif predict_number > number:
             high_bord = predict_number   #Изменяем верхнюю границу если предполагаемое > загаданного
         elif predict_number < number:
-            low_bord = predict_number   #Изменяем нижнюю границу если предполагаемое < загаданного
+            low_bord = predict_number+1   #Изменяем нижнюю границу если предполагаемое < загаданного
     return count
 
 
